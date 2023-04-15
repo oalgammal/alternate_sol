@@ -156,5 +156,9 @@
       text-align: center;
       padding-bottom: 10px;
     }
+    .calenderCard{
+      top: unset;
+      margin-top: 5px;
+    }
    
   }
