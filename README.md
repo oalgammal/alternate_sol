@@ -9,5 +9,5 @@ minor CSS fixes
 
 estimated time consumed to perform this task: 3 hours
 
-deployed link: portfolio-oalgammal.vercel.app
+deployed link: https://portfolio-oalgammal.vercel.app
 github repository: https://github.com/oalgammal/portfolio
