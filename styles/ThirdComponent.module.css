@@ -148,3 +148,13 @@
 .linkButton:first-child{
   margin-right: 50px;
 }
+
+  @media (max-width: 767px) {
+    .textContainer{
+      flex-direction: column;
+      height: 100%;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+   
+  }

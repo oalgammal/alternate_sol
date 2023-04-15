@@ -44,7 +44,6 @@
   align-self: flex-start;
   height: 50%;
 }
-
 .textContainer{
   z-index: 1;
   position: absolute;
@@ -97,3 +96,21 @@
 .linkButton:first-child{
   margin-right: 50px;
 }
+
+  @media (max-width: 767px) {
+    .textContainer{
+      width: calc(100% - 50px);
+      left: 0;
+      right: 0;
+      margin:0px 25px 0px 25px;
+    }
+    .titleContainer{
+      height: unset;
+    }
+    .galleryContainer{
+      height: 100%;
+      align-items: flex-end;
+      overflow: scroll;
+    }
+   
+  }

@@ -50,3 +50,13 @@
 .linkButton:first-child{
   margin-right: 50px;
 }
+
+  @media (max-width: 767px) {
+   .firstImage{
+    position: fixed !important;
+    width: 250% !important;
+    right: calc(-75%) !important;
+    inset: 0px calc(-75%) !important;
+    transform: scaleX(0.4);
+   }
+  }

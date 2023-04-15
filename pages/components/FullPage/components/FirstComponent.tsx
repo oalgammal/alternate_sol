@@ -34,6 +34,7 @@ const FirstComponent:React.FC<props> = ({setCurrentPage}) => {
 			<Image
 				src='/page1.svg'
 				fill={true}
+				className={styles.firstImage}
 				style={{ objectFit: 'cover' }}
 				alt='frost'
 			/>

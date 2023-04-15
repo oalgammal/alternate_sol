@@ -123,3 +123,9 @@ a {
     color-scheme: dark;
   }
 }
+@media (max-width: 767px) {
+   .image-gallery-thumbnails-container{
+    width: 100%;
+      display: flex;
+    }
+}
