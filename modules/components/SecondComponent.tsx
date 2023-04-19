@@ -31,12 +31,12 @@ const images = [
 	},
 ]
 
-interface props{
-	setCurrentPage:any
-}
 
-const SecondComponent: React.FC<props> = ({ setCurrentPage }) => {
+
+const SecondComponent = () => {
+	
 	React.useEffect(() => {
+		
 		const slider = document.getElementsByClassName(
 			'image-gallery-slide-wrapper'
 		)
@@ -45,33 +45,11 @@ const SecondComponent: React.FC<props> = ({ setCurrentPage }) => {
 		)
 		const parent = slider[0].parentNode
 		parent?.insertBefore(gallery[0], slider[0])
-
+			
 	})
 	return (
 		<div className={styles.container}>
-			<div className={styles.header}>
-				<div>
-					<Image width={164} height={43} src='/Logo.svg' alt='logo' />
-				</div>
-				<div className={styles.buttonContainer}>
-					<button
-						onClick={() => {
-							setCurrentPage(1)
-						}}
-						className={styles.linkButton}
-					>
-						01. HISTORY
-					</button>
-					<button
-						onClick={() => {
-							setCurrentPage(2)
-						}}
-						className={styles.linkButton}
-					>
-						02. TEAM
-					</button>
-				</div>
-			</div>
+			
 			<Image
 				src='/page2.svg'
 				fill={true}

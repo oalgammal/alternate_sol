@@ -28,19 +28,14 @@
   width: 100%;
   height: 100%;
 }
-.header .linkButton{
-  color:white;
-  border-bottom: 1.5px solid white;
-}
+
 .linkButton{
   cursor: pointer;
   font-family: Lato;
   font-style: italic;
   font-weight: 900;
-  color: rgb(65,79,107);
   border:0;
   background-color: transparent;
-  border-bottom: 1.5px solid rgb(65,79,107);
 }
 
 .buttonContainer{

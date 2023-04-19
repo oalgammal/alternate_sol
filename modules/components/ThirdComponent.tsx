@@ -1,42 +1,19 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from '@/styles/ThirdComponent.module.css'
+import { useRouter } from 'next/router'
 
 
 
-interface props {
-	setCurrentPage: any
-}
 
-const ThirdComponent: React.FC<props> = ({ setCurrentPage }) => {
+
+const ThirdComponent = () => {
 	const[active,setActive]=React.useState(1)
-	
+
 	return (
 		<div className={styles.container}>
 			<div className={styles.topFlex}>
-				<div className={styles.header}>
-					<div>
-						<Image width={164} height={43} src='/Logo.svg' alt='logo' />
-					</div>
-					<div className={styles.buttonContainer}>
-						<button
-							onClick={() => {
-								setCurrentPage(1)
-							}}
-							className={styles.linkButton}
-						>
-							01. HISTORY
-						</button>
-						<button
-							onClick={() => {
-								setCurrentPage(2)
-							}}
-							className={styles.linkButton}
-						>
-							02. TEAM
-						</button>
-					</div>
-				</div>
+			
 				<div className={styles.textContainer}>
 					<div className={styles.titleContainer}>
 						<div className={styles.number}>02.</div>
